@@ -75,11 +75,11 @@ public class ReadLog {
 
     protected Object doReadLog(File logFile, long lastOffset) {
         if (logFile == null) {
-            System.out.println("[doReadLog] [logFile] == null..");
+            //System.out.println("[doReadLog] [logFile] == null..");
             return lastOffset;
         }
         if (!logFile.isFile()) {
-            System.err.println("[doReadLog] [isFile] -> " + logFile.isFile());
+            //System.err.println("[doReadLog] [isFile] -> " + logFile.isFile());
             return null;
         }
         //System.out.println("[doReadLog] [logFile] -> " + logFile.getAbsolutePath());

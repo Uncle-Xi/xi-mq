@@ -162,3 +162,5 @@ gradle
 dependency-reduced-pom.xml
 
 /ximq-logs/*
+ximq-logs/*
+*/ximq-logs/*

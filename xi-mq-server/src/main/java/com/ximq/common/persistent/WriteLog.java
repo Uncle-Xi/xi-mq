@@ -53,7 +53,9 @@ public class WriteLog {
                     creatIndexFile = true;
                     creatLogsFile  = true;
                 } else {
-                    logFileName = lastFile.getName();
+                    if (lastFile.isFile()) {
+                        logFileName = lastFile.getName();
+                    }
                 }
                 if (creatLogsFile) {
                     logsFile = FileUtil.createFile(partitionDir, logFileName);
